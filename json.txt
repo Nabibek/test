@@ -1,0 +1,337 @@
+{
+    "offers": [
+        {
+            "masterSku": "121806358",
+            "masterCategory": "Master - LED TVs",
+            "merchantId": "30358551",
+            "merchantName": "Xiaomi Official Store",
+            "merchantSku": "55421",
+            "merchantReviewsQuantity": 3588,
+            "merchantRating": 4.9,
+            "merchantSegmentId": 3.0,
+            "purchaseCount": 428,
+            "title": "Xiaomi A 2025 L55MA-ARU 140 см черный",
+            "price": 179990.0,
+            "priceBeforeDiscount": 199990.0,
+            "discount": 10,
+            "delivery": "2025-11-26T18:00:00.000+00:00",
+            "deliveryMovedBySlot": false,
+            "deliverySteps": {},
+            "kdPickupDate": "2025-11-25T15:00:00.000+00:00",
+            "availabilityDate": "2025-11-24T17:53:27.397+00:00",
+            "kaspiDelivery": true,
+            "kdPoints": [
+                "30358551_PP1"
+            ],
+            "warehousesWithAvailability": [
+                "30358551_PP1"
+            ],
+            "preorder": 0,
+            "locatedInPoint": "30358551_PP1",
+            "deliveryType": "TO_DOOR",
+            "deliveryDuration": "TILL_2_DAYS",
+            "deliveryOptions": {
+                "TO_DOOR": {
+                    "delivery": "2025-11-26T18:00:00.000+00:00",
+                    "kdPickupDate": "2025-11-25T15:00:00.000+00:00",
+                    "deliveryType": "TO_DOOR",
+                    "locatedInPoint": "30358551_PP1",
+                    "kaspiDelivery": true,
+                    "deliveryCost": 995.0,
+                    "deliveryThreshold": 5000.0,
+                    "interCity": false
+                }
+            }
+        },
+        {
+            "masterSku": "121806358",
+            "masterCategory": "Master - LED TVs",
+            "merchantId": "VENDER",
+            "merchantName": "Xiaomi Authorized Store Kazakhstan",
+            "merchantSku": "00000061214",
+            "merchantReviewsQuantity": 2238,
+            "merchantRating": 4.9,
+            "merchantSegmentId": 2.0,
+            "purchaseCount": 286,
+            "title": "Смарт телевизор Xiaomi A 2025 55\" (L55MA-ARU)",
+            "price": 179990.0,
+            "delivery": "2025-11-25T05:00:00.000+00:00",
+            "deliveryMovedBySlot": false,
+            "deliverySteps": {},
+            "kdPickupDate": "2025-11-25T04:00:00.000+00:00",
+            "availabilityDate": "2025-11-24T17:53:27.397+00:00",
+            "kaspiDelivery": true,
+            "kdPoints": [
+                "VENDER_BlueStar",
+                "VENDER_TechnodomAstana"
+            ],
+            "warehousesWithAvailability": [
+                "VENDER_BlueStar"
+            ],
+            "preorder": 0,
+            "locatedInPoint": "VENDER_BlueStar",
+            "deliveryType": "EXPRESS",
+            "deliveryDuration": "TOMORROW",
+            "deliveryOptions": {
+                "TO_DOOR": {
+                    "delivery": "2025-11-26T18:00:00.000+00:00",
+                    "kdPickupDate": "2025-11-25T15:00:00.000+00:00",
+                    "deliveryType": "TO_DOOR",
+                    "locatedInPoint": "VENDER_BlueStar",
+                    "kaspiDelivery": true,
+                    "deliveryCost": 995.0,
+                    "deliveryThreshold": 5000.0,
+                    "interCity": false
+                },
+                "EXPRESS": {
+                    "delivery": "2025-11-25T05:00:00.000+00:00",
+                    "kdPickupDate": "2025-11-25T04:00:00.000+00:00",
+                    "deliveryType": "EXPRESS",
+                    "locatedInPoint": "VENDER_BlueStar",
+                    "kaspiDelivery": true,
+                    "cost": 995.0,
+                    "deliveryCost": 995.0,
+                    "deliveryThreshold": 9.99999999E8,
+                    "expressSlot": {
+                        "from": "10:00",
+                        "to": "12:00",
+                        "date": "2025-11-25"
+                    },
+                    "expressSlots": [
+                        {
+                            "from": "10:00",
+                            "to": "12:00",
+                            "date": "2025-11-25"
+                        }
+                    ],
+                    "interCity": false
+                }
+            }
+        },
+        {
+            "masterSku": "121806358",
+            "masterCategory": "Master - LED TVs",
+            "merchantId": "18681075",
+            "merchantName": "2People",
+            "merchantSku": "00000061214",
+            "merchantReviewsQuantity": 1268,
+            "merchantRating": 4.8,
+            "merchantSegmentId": 2.0,
+            "purchaseCount": 26,
+            "title": "Смарт телевизор Xiaomi A 2025 55\" (L55MA-ARU)",
+            "price": 179990.0,
+            "delivery": "2025-11-25T05:00:00.000+00:00",
+            "deliveryMovedBySlot": false,
+            "deliverySteps": {},
+            "pickupSteps": {
+                "P": "2025-11-24T19:00:00.000+00:00",
+                "MA": "2025-11-24T19:00:00.000+00:00"
+            },
+            "kdPickupDate": "2025-11-25T04:00:00.000+00:00",
+            "availabilityDate": "2025-11-24T17:53:27.397+00:00",
+            "pickup": "2025-11-24T19:00:00.000+00:00",
+            "kaspiDelivery": true,
+            "kdPoints": [
+                "18681075_BlueStar",
+                "18681075_TechnodomAstana"
+            ],
+            "pointsWithAvailability": [
+                "18681075_BlueStar"
+            ],
+            "preorder": 0,
+            "locatedInPoint": "18681075_BlueStar",
+            "deliveryType": "EXPRESS",
+            "deliveryDuration": "TOMORROW",
+            "deliveryOptions": {
+                "TO_DOOR": {
+                    "delivery": "2025-11-26T18:00:00.000+00:00",
+                    "kdPickupDate": "2025-11-25T15:00:00.000+00:00",
+                    "deliveryType": "TO_DOOR",
+                    "locatedInPoint": "18681075_BlueStar",
+                    "kaspiDelivery": true,
+                    "deliveryCost": 995.0,
+                    "deliveryThreshold": 5000.0,
+                    "interCity": false
+                },
+                "PICKUP": {
+                    "delivery": "2025-11-24T19:00:00.000+00:00",
+                    "deliveryType": "PICKUP",
+                    "deliverySteps": {
+                        "P": "2025-11-24T19:00:00.000+00:00",
+                        "MA": "2025-11-24T19:00:00.000+00:00"
+                    },
+                    "interCity": false
+                },
+                "EXPRESS": {
+                    "delivery": "2025-11-25T05:00:00.000+00:00",
+                    "kdPickupDate": "2025-11-25T04:00:00.000+00:00",
+                    "deliveryType": "EXPRESS",
+                    "locatedInPoint": "18681075_BlueStar",
+                    "kaspiDelivery": true,
+                    "cost": 995.0,
+                    "deliveryCost": 995.0,
+                    "deliveryThreshold": 9.99999999E8,
+                    "expressSlot": {
+                        "from": "10:00",
+                        "to": "12:00",
+                        "date": "2025-11-25"
+                    },
+                    "expressSlots": [
+                        {
+                            "from": "10:00",
+                            "to": "12:00",
+                            "date": "2025-11-25"
+                        }
+                    ],
+                    "interCity": false
+                }
+            }
+        },
+        {
+            "masterSku": "121806358",
+            "masterCategory": "Master - LED TVs",
+            "merchantId": "18679883",
+            "merchantName": "NOVAMART - ОФИЦИАЛЬНЫЙ IMEI",
+            "merchantSku": "49767",
+            "merchantReviewsQuantity": 2091,
+            "merchantRating": 4.9,
+            "merchantSegmentId": 2.0,
+            "purchaseCount": 0,
+            "title": "Смарт телевизор Xiaomi A 2025 55\" (L55MA-ARU)",
+            "price": 209989.0,
+            "delivery": "2025-11-26T18:00:00.000+00:00",
+            "deliveryMovedBySlot": false,
+            "deliverySteps": {
+                "PO": "2025-11-24T19:00:00.000+00:00"
+            },
+            "kdPickupDate": "2025-11-25T15:00:00.000+00:00",
+            "availabilityDate": "2025-11-24T19:00:00.000+00:00",
+            "kaspiDelivery": true,
+            "kdPoints": [
+                "18679883_PP3"
+            ],
+            "warehousesWithAvailability": [
+                "18679883_PP3"
+            ],
+            "preorder": 1,
+            "locatedInPoint": "18679883_PP3",
+            "deliveryType": "TO_DOOR",
+            "deliveryDuration": "TILL_2_DAYS",
+            "deliveryOptions": {
+                "TO_DOOR": {
+                    "delivery": "2025-11-26T18:00:00.000+00:00",
+                    "kdPickupDate": "2025-11-25T15:00:00.000+00:00",
+                    "deliveryType": "TO_DOOR",
+                    "locatedInPoint": "18679883_PP3",
+                    "kaspiDelivery": true,
+                    "deliveryCost": 995.0,
+                    "deliveryThreshold": 5000.0,
+                    "interCity": false
+                }
+            }
+        },
+        {
+            "masterSku": "121806358",
+            "masterCategory": "Master - LED TVs",
+            "merchantId": "001KZ",
+            "merchantName": "1kz",
+            "merchantSku": "790202195",
+            "merchantReviewsQuantity": 4779,
+            "merchantRating": 4.9,
+            "merchantSegmentId": 3.0,
+            "purchaseCount": 0,
+            "title": "LED телевизор XIAOMI A 2025 55\" (L55MA-ARU) L55MA-ARU",
+            "price": 209990.0,
+            "delivery": "2025-11-26T18:00:00.000+00:00",
+            "deliveryMovedBySlot": false,
+            "deliverySteps": {
+                "PO": "2025-11-24T19:00:00.000+00:00"
+            },
+            "pickupSteps": {
+                "P": "2025-11-26T19:00:00.000+00:00",
+                "MA": "2025-11-24T19:00:00.000+00:00",
+                "PO": "2025-11-26T19:00:00.000+00:00"
+            },
+            "kdPickupDate": "2025-11-25T15:00:00.000+00:00",
+            "availabilityDate": "2025-11-24T19:00:00.000+00:00",
+            "pickup": "2025-11-26T19:00:00.000+00:00",
+            "kaspiDelivery": true,
+            "kdPoints": [
+                "001KZ_PP1",
+                "001KZ_PP15"
+            ],
+            "pointsWithAvailability": [
+                "001KZ_PP1"
+            ],
+            "warehousesWithAvailability": [
+                "001KZ_PP15"
+            ],
+            "preorder": 1,
+            "locatedInPoint": "001KZ_PP1",
+            "deliveryType": "TO_DOOR",
+            "deliveryDuration": "TILL_5_DAYS",
+            "deliveryOptions": {
+                "TO_DOOR": {
+                    "delivery": "2025-11-26T18:00:00.000+00:00",
+                    "kdPickupDate": "2025-11-25T15:00:00.000+00:00",
+                    "deliveryType": "TO_DOOR",
+                    "locatedInPoint": "001KZ_PP1",
+                    "kaspiDelivery": true,
+                    "deliveryCost": 995.0,
+                    "deliveryThreshold": 5000.0,
+                    "interCity": false
+                },
+                "PICKUP": {
+                    "delivery": "2025-11-26T19:00:00.000+00:00",
+                    "deliveryType": "PICKUP",
+                    "deliverySteps": {
+                        "P": "2025-11-26T19:00:00.000+00:00",
+                        "MA": "2025-11-24T19:00:00.000+00:00",
+                        "PO": "2025-11-26T19:00:00.000+00:00"
+                    },
+                    "interCity": false
+                }
+            }
+        }
+    ],
+    "total": 27,
+    "offersCount": 27,
+    "pcmResponsePresent": true,
+    "badges": [
+        {
+            "code": "RASSROCHKA_DEFAULT_BADGE",
+            "imageUrl": "https://static.cdn-kaspi.kz/msd/new_badges/0012.png",
+            "type": "LOAN",
+            "priority": 12,
+            "duration": 12,
+            "owner": "KASPI",
+            "bonusType": ""
+        }
+    ],
+    "loanPicker": {
+        "present": true,
+        "maxInterestFreeDuration": 12
+    },
+    "deliveryDurationFacetValues": {
+        "TILL_7_DAYS": 26,
+        "TOMORROW": 7,
+        "TILL_5_DAYS": 26,
+        "TILL_2_DAYS": 18
+    },
+    "highRatingPresent": true,
+    "excellentMerchantPresent": true,
+    "pcmRequestId": "c8735e5e-6f03-47d4-8a55-a7e35274e455",
+    "productCardInfo": {
+        "badges": [
+            {
+                "code": "RASSROCHKA_DEFAULT_BADGE",
+                "imageUrl": "https://static.cdn-kaspi.kz/msd/new_badges/0012.png",
+                "type": "LOAN",
+                "priority": 12,
+                "duration": 12,
+                "owner": "KASPI",
+                "bonusType": ""
+            }
+        ]
+    }
+}
