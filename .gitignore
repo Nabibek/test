@@ -1,0 +1,6 @@
+
+# Config files - ignore local config overrides
+config.local.yaml
+config.local.yml
+*.local.yaml
+*.local.yml
