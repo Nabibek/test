@@ -85,13 +85,13 @@ go run cmd/server/main.go
 }
 
 2. **Сохранение данных Kaspi**
-
+```http
     POST /products/save-kaspi-data
-
+```
     Сохранение данных о товаре с Kaspi Marketplace.
 
 Request Body:
-
+```json
 {
   "product_id": "121806358",
   "offers": {
@@ -114,9 +114,9 @@ Request Body:
     "offersCount": 27
   }
 }
-
+```
 Response:
-
+```json
 {
   "product_id": "121806358",
   "min_price": 179990,
@@ -138,23 +138,23 @@ Response:
   "total_offers": 27,
   "analysis_time": "2024-01-15T10:30:00Z"
 }
-
+```
 3. **Анализ продукта**
-
+```http
     GET /products/{productId}/analyze
-
+```
     Получение анализа цен для сохраненного продукта.
 
 Response: Аналогично POST /products/save-kaspi-data.
 
 4. **История цен**
-
+```http
     GET /products/{productId}/history
-
+```
     Получение истории изменения цен.
 
 Response:
-
+```json
 [
   {
     "id": 1,
@@ -164,23 +164,23 @@ Response:
     "timestamp": "2024-01-15T10:30:00Z"
   }
 ]
-
+```
 5. **Информация о продукте**
-
+```http
     GET /products/{productId}/info
-
+```
     Получение текущей информации о продукте.
 
 Response:
-
+```json
     {
       "product_id": "121806358",
       "sellers": [...],
       "timestamp": "2024-01-15T10:30:00Z"
     }
-
+```
 ### 🗄 Структура проекта
-
+```
 Mini-Quicko/
 ├── cmd/                    # Точка входа приложения
 │   └── server/
@@ -194,34 +194,35 @@ Mini-Quicko/
 ├── Dockerfile              # Конфигурация Docker образа
 ├── docker-compose.yml      # Конфигурация Docker Compose
 └── README.md               # Этот файл
-
+```
 ### 🔧 Конфигурация
 
-Настройки через переменные окружения:
-Переменная	По умолчанию	Описание
-SERVER_PORT	8080	Порт HTTP сервера
-DB_HOST	localhost	Хост PostgreSQL
-DB_PORT	5432	Порт PostgreSQL
-DB_USER	postgres	Пользователь БД
-DB_PASSWORD	password	Пароль БД
-DB_NAME	kaspi_analyzer	Имя базы данных
-🐳 Docker
+| Переменная | По умолчанию | Описание |
+|------------|--------------|----------|
+| SERVER_PORT | 8080 | Порт HTTP сервера |
+| DB_HOST | localhost | Хост PostgreSQL |
+| DB_PORT | 5432 | Порт PostgreSQL |
+| DB_USER | postgres | Пользователь БД |
+| DB_PASSWORD | password | Пароль БД |
+| DB_NAME | kaspi_analyzer | Имя базы данных |
+
+### 🐳 Docker
 Сборка образа
-
+```bash
 docker build -t mini-quicko .
-
-Запуск с Docker Compose
-
+```
+**Запуск с Docker Compose**
+```bash
 docker-compose up -d
-
-Просмотр логов
-
+```
+**Просмотр логов**
+```bash
 docker-compose logs -f app
-
+```
 ### 🎯 Пример использования
 
-    Сохранение данных с Kaspi
-
+**Сохранение данных с Kaspi**
+```
 curl -X POST http://localhost:8080/products/save-kaspi-data \
   -H "Content-Type: application/json" \
   -d '{
@@ -246,15 +247,15 @@ curl -X POST http://localhost:8080/products/save-kaspi-data \
         "offersCount": 27
     }
 }'
-
+```
 ### Получение анализа
-
+```
 curl http://localhost:8080/products/121806358/analyze
-
+```
 ### Просмотр истории цен
-
+```
 curl http://localhost:8080/products/121806358/history
-
+```
 ### 🔍 Логика анализа
 Определение демпинга
 
@@ -264,7 +265,7 @@ curl http://localhost:8080/products/121806358/history
 
     Цена ниже минимальной цены в сегменте + 5%.
 
-Расчет оптимальной цены
+**Расчет оптимальной цены**
 ```bash
 
 optimal_price = (min_price + avg_price) / 2 * rating_multiplier
