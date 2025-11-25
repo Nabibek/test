@@ -1,13 +1,14 @@
 package service
 
 import (
-	"Mini-Quicko/internal/core/models"
-	"Mini-Quicko/internal/core/ports"
 	"context"
 	"fmt"
 	"log"
 	"math"
 	"time"
+
+	"Mini-Quicko/internal/core/models"
+	"Mini-Quicko/internal/core/ports"
 )
 
 type service struct {
@@ -135,8 +136,8 @@ func (s *service) analyzePrices(productID string, sellers []models.Seller) *mode
 		// Проверяем демпинг относительно сегмента
 		if stat, exists := segmentStats[seller.Segment]; exists && stat.count > 1 {
 			segmentAvg := stat.total / float64(stat.count)
-			// Демпинг если цена ниже 90% от средней по сегменту И ниже минимальной по сегменту
-			if seller.Price < segmentAvg*0.9 && seller.Price < stat.min*1.05 {
+			// Демпинг если цена ниже 90% от средней по сегменту или ниже минимальной по сегменту
+			if seller.Price < segmentAvg*0.9 || seller.Price < stat.min*1.05 {
 				dumpingSellers = append(dumpingSellers, seller)
 			}
 		}
@@ -160,7 +161,8 @@ func (s *service) calculateOptimalPrice(minPrice, avgPrice float64, sellers []mo
 	count int
 	total float64
 	min   float64
-}) float64 {
+},
+) float64 {
 	// Логика расчета оптимальной цены:
 	// 1. Берем среднюю цену между минимальной и средней
 	// 2. Учитываем сегмент продавца
