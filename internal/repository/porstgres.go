@@ -1,12 +1,14 @@
 package repository
 
 import (
-	"Mini-Quicko/internal/core/models"
-	"Mini-Quicko/internal/core/ports"
 	"context"
 	"database/sql"
 	"fmt"
+	"log"
 	"time"
+
+	"Mini-Quicko/internal/core/models"
+	"Mini-Quicko/internal/core/ports"
 
 	_ "github.com/lib/pq"
 )
@@ -16,13 +18,32 @@ type PostgresRepository struct {
 }
 
 func NewPostgresRepository(connStr string) (ports.Repository, error) {
-	db, err := sql.Open("postgres", connStr)
-	if err != nil {
-		return nil, fmt.Errorf("failed to open database: %w", err)
+	var db *sql.DB
+	var err error
+
+	// Пытаемся подключиться с retry
+	for i := 0; i < 10; i++ {
+		db, err = sql.Open("postgres", connStr)
+		if err != nil {
+			log.Printf("Failed to open database (attempt %d): %v", i+1, err)
+			time.Sleep(2 * time.Second)
+			continue
+		}
+
+		err = db.Ping()
+		if err != nil {
+			log.Printf("Failed to ping database (attempt %d): %v", i+1, err)
+			db.Close()
+			time.Sleep(2 * time.Second)
+			continue
+		}
+
+		// Успешное подключение
+		break
 	}
 
-	if err := db.Ping(); err != nil {
-		return nil, fmt.Errorf("failed to ping database: %w", err)
+	if err != nil {
+		return nil, fmt.Errorf("failed to connect to database after retries: %w", err)
 	}
 
 	// Create tables if they don't exist
@@ -30,6 +51,7 @@ func NewPostgresRepository(connStr string) (ports.Repository, error) {
 		return nil, fmt.Errorf("failed to create tables: %w", err)
 	}
 
+	log.Println("Successfully connected to PostgreSQL database")
 	return &PostgresRepository{db: db}, nil
 }
 
